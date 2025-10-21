@@ -1,0 +1,100 @@
+body{
+      font-family: "PT Sans Caption", sans-serif;
+}
+::selection {
+  background: #fec260; /* Example: light red background for highlight */
+  color: #000000; /* Example: black text color for highlighted text */
+}
+.main{
+    background-color: #f7ecde;
+    min-height: 100vh;
+}
+.main h1{
+    font-family: "Pacifico", cursive;
+    color: #352E28;
+    font-size: 50px;
+    padding: 8px 0px;
+    position: relative;
+    z-index: 5;
+}
+.main h1::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+}
+.main h1:hover::before{
+    height: 50%;
+
+}
+.main .inputs{
+    border: #352e28 dotted 2px;
+    border-left: transparent;
+    border-right: transparent;
+}
+.main .inputs h2{
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+}
+form .inputLabel{
+    font-weight: 600 !important;
+}
+.form-control:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.btn-success{
+    --bs-btn-bg: #9eb23b !important;
+    --bs-btn-hover-bg: #8a9e23 !important;
+}
+table td{
+    background-color: #f8f9fa;
+}
+
+.circles span{
+    width: 20px;
+    height: 20px;
+}
+.circles span:nth-child(1){
+    
+    background-color: #f15f5d;
+}
+.circles span:nth-child(2){
+    
+    background-color: #febe2e;
+}
+.circles span:nth-child(3){
+    
+    background-color: #4db748;
+}
+.modal-body p{
+    color: #212529 ;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 18px;
+}
+.modal-body p i{
+    color: #bb4120;
+}
+.modal-body h4{
+    color: #212529 ;
+    font-family: "Bree Serif", serif;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.btn-close:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0rem transparent;
+    opacity: var(--bs-btn-close-focus-opacity);
+}
