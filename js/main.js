@@ -64,7 +64,7 @@ function displayItems() {
 
 
 function validateName(){
-  var nameRegex = /^[A-Za-z0-9 ]{3,}$/
+  var nameRegex = /^[A-Za-z0-9ا-ي ]{3,}$/
   var name = nameInput.value
 
   if(nameRegex.test(name)==true){
